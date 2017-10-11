@@ -1,0 +1,82 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+  <title>Pure CSS</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+  <link rel="stylesheet" type="text/css" href="CSS/normalize.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header>
+    <h1 id="titre"><a href="index.html" title="Accueil">Les Frameworks CSS</a></h1>
+  </header>
+  <nav>
+    <ul class="menu">
+      <li><a href="">Accueil</a></li>
+      <li><a href="">Présentation</a>
+        <ul class="submenu">
+          <li><a href="">Qu'est ce que c'est?</a></li>
+          <li><a href="">Pourquoi faire?</a></li>
+          <li><a href="">Qui ça interesse?</a></li>
+        </ul>
+      </li>
+      <li><a href="">Installer et utiliser</a></li>
+      <li><a href="">Différents Frameworks</a>
+        <ul class="submenu">
+          <li id="lourd" ><a href="">Lourds</a>
+            <ul class="lourdsubmenu">
+              <li ><a href="bootstrap.html" class="noborder">Bootstrap</a></li>
+              <li><a href="foundation.html" class="noborder">Foundation</a></li>
+            </ul>
+          </li>
+          <li id="leger"><a href="">Legers</a>
+            <ul class="legersubmenu">
+              <li><a href="purecss.html">Pure CSS</a></li>
+              <li><a href="skeleton.html">Skeleton</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="">Bibliographie</a></li>
+    </ul>
+  </nav>
+
+
+  <section>
+    <img src="./IMG/pure.png" alt="image de Pure"/>
+    <h2>Qu'est-ce que Pure CSS ?</h2>
+
+    <p>Pure CSS est un framework responsive developpé par Yahoo. Ne pesant que 4.5KB compressé, Pure CSS est donc léger et rapide et peu par conséquent remplacer de plus gros framework dans de petits projets. Pure est comme la plupart des framework CSS léger construit sur les base de Normalize.css ce qui lui offre de nombreux avantages tels qu'une grille personnalisable et réactive ou encore un look propre et minimaliste qui peu facilement se personnaliser. De plus une grande quantitée de documentation est disponible sur le site de Pure CSS.</p>
+
+    <div class="pure-g">
+      <div class="pure-u-2-5">
+        <h3>Avantage:</h3>
+        <ul>
+          <li>Léger</li>
+          <li>Simple d'utilisation</li>
+          <li>Grille personnalisable et responsive</li>
+          <li>Un look propre</li>
+          <li>Compatibilité</li>
+          <li>Coder uniquement en CSS</li>
+          <li>Bonne compatibilité avec les mobiles</li>
+        </ul>
+      </div>
+      <div class="pure-u-2-5">
+        <h3>Inconvénient</h3>
+        <ul>
+          <li>Pas de JQuery ou Javascript</li>
+        </ul>
+      </div>
+    </div>
+
+    <p>Cette page (header et footer exclu) à été conçu avec le framework Pure CSS. Pour plus d'information, rendez-vous sur la page de <a href="https://purecss.io/">Pure CSS</a>.</p>
+
+  </section>
+</body>
+<footer>
+  <a href="">Plan du site</a>
+  <span>IUT du Havre LPRO DASI</span>
+</footer>
+</html>

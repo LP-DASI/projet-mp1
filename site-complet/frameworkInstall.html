@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<title>Install framework</title>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+	</head>
+	<body>
+		<header>
+			<h1 id="titre"><a href="index.html" title="Accueil">Les Frameworks CSS</a></h1>
+		</header>
+		<nav>
+			<ul class="menu">
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="">Présentation</a>
+					<ul class="submenu">
+						<li><a href="">Qu'est ce que c'est?</a></li>
+						<li><a href="">Pourquoi faire?</a></li>
+						<li><a href="">Qui ça interesse?</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Installer et utiliser</a></li>
+				<li><a href="">Différents Frameworks</a>
+					<ul class="submenu">
+						<li id="lourd" ><a href="">Lourds</a>
+							<ul class="lourdsubmenu">
+								<li ><a href="bootstrap.html" class="noborder">Bootstrap</a></li>
+								<li><a href="foundation.html" class="noborder">Foundation</a></li>
+							</ul>
+						</li>
+						<li id="leger"><a href="">Legers</a>
+							<ul class="legersubmenu">
+								<li><a href="">Pure CSS</a></li>
+								<li><a href="">Skeleton</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="">Bibliographie</a></li>
+			</ul>
+		</nav>
+		
+		
+		<section>
+			<h2>Installer et utiliser un framework CSS</h2>
+			<p>Pour ce faire nous allons utiliser « la librairie HTML, CSS, JS la plus populaire du monde », <a href="http://getbootstrap.com/" title="Bootstrap.com">Bootstrap</a>.</p>
+			<p> Une fois sur la page des téléchargements 3 choix nous sont proposés :</p>
+			<ul>
+				<li>Télécharger la version "compilée et minimisée" de Bootstrap qui est donc une version allégée du Framework.</li>
+				<li>Télécharger la version "Complète" du Framework comprenant les bases a l’utilisation de LESS CSS* ou la documentation de Bootstrap.</li>
+				<li>Porter Bootstrap vers SASS*.</li>
+			</ul>
+			<p>Nous utiliserons la première option.</p>
+			<p>Dans l’archive nouvellement télécharger nous pouvons trouver l’arborescence suivante.</p>
+			<figure>
+				<img src="IMG/bootstrapArch.png" alt="Arborescence de Bootstrap" title="Arborescence de Bootstrap"/>
+				<figcaption><a class="legendLink" target="_blank" href="http://www.journaldunet.com/web-tech/developpeur/1160960-comment-installer-bootstrap/" title="Lien de l'image">http://www.journaldunet.com/web-tech/developpeur/1160960-comment-installer-bootstrap/</a></figcaption>
+			</figure>
+			<p>
+				À l'intérieur du dossier CSS, nous trouvons le fichier bootstrap.css qui est la version CSS compilée, ainsi que le fichier bootstrap.min.css qui, en plus, est minimisé. 
+				Dans le dossier js sont placées les deux versions (compilée et minimisée) du fichier JavaScript de Bootstrap. 
+			</p>
+			<p>
+				Afin de pouvoir utiliser Bootstrap dans votre site il vous suffit de déplacer le contenu de l’archive dans la racine de votre site web.<br/>
+				Le principe de bootstrap réside dans son layout en grille divisible en plusieurs parties.
+				Chacune de ces parties est nommée container et il en existe 2 types :
+			</p>
+			<ul>
+				<li><strong>Le .container</strong>, utilisé pour une longueur donnée.</li>
+				<li><strong>Le .container-fluid</strong>, pour utiliser toute la longueur possible.</li>
+			</ul>
+			<p>
+				Chaque container peux disposer de une ou plusieurs lignes nommées <strong>row</strong> qui peuvent elles-mêmes disposer de une ou plusieurs colonnes nommées <strong>col</strong>.
+			</p>
+			<p>
+				Voici un exemple de code :
+			</p>
+			<p class="code">
+				&lt;div class="container"&gt;	<br/>
+					&emsp;&lt;div class="row"&gt; <br/>
+						&emsp;&emsp;&lt;div class="col-*"&gt;&lt;/div&gt; <br/>
+					&emsp;&lt;/div&gt; <br/>
+					&emsp;&lt;div class="row"&gt; <br/>
+						&emsp;&emsp;&lt;div class="col-*"&gt;&lt;/div&gt; <br/>
+						&emsp;&emsp;&lt;div class="col-*"&gt;&lt;/div&gt; <br/>
+						&emsp;&emsp;&lt;div class="col-*"&gt;&lt;/div&gt; <br/>
+					&emsp;&lt;/div&gt; <br/>
+					&emsp;&lt;div class="row"&gt; <br/>
+				 &emsp;... <br/>
+					&emsp;&lt;/div&gt; <br/>
+				&lt;/div&gt; <br/>
+			</p>
+			<p>
+				Les nombres à ajouter dans <strong>col-*</strong> doivent être entre 1 et 12.
+			</p>
+			<p>
+				Exemple de grilles Bootstrap :
+			</p>
+			<figure>
+				<img id="grilleBS" src="IMG/grilleBootstrap.png" alt="Grille de bootstrap" title="Grille de bootstrap"/>
+				<figcaption><a class="legendLink" target="_blank" href="http://www.coderomeos.org/bootstrap-tutorial-step-by-step">http://www.coderomeos.org/bootstrap-tutorial-step-by-step</a></figcaption>
+			</figure>
+		</section>
+		
+		<footer>
+			<a href="">Plan du site</a>
+			<span>IUT du Havre LPRO DASI</span>
+		</footer>
+	</body>
+</html>

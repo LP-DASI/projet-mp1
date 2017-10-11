@@ -1,0 +1,85 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+  <title>Skeleton</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+  <link rel="stylesheet" type="text/css" href="CSS/normalize.css"/>
+  <link rel="stylesheet" type="text/css" href="CSS/skeleton.css"/>
+</head>
+<body>
+  <header>
+    <h1 id="titre"><a href="index.html" title="Accueil">Les Frameworks CSS</a></h1>
+  </header>
+  <nav>
+    <ul class="menu">
+      <li><a href="">Accueil</a></li>
+      <li><a href="">Présentation</a>
+        <ul class="submenu">
+          <li><a href="">Qu'est ce que c'est?</a></li>
+          <li><a href="">Pourquoi faire?</a></li>
+          <li><a href="">Qui ça interesse?</a></li>
+        </ul>
+      </li>
+      <li><a href="">Installer et utiliser</a></li>
+      <li><a href="">Différents Frameworks</a>
+        <ul class="submenu">
+          <li id="lourd" ><a href="">Lourds</a>
+            <ul class="lourdsubmenu">
+              <li ><a href="bootstrap.html" class="noborder">Bootstrap</a></li>
+              <li><a href="foundation.html" class="noborder">Foundation</a></li>
+            </ul>
+          </li>
+          <li id="leger"><a href="">Legers</a>
+            <ul class="legersubmenu">
+              <li><a href="purecss.html">Pure CSS</a></li>
+              <li><a href="skeleton.html">Skeleton</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="">Bibliographie</a></li>
+    </ul>
+  </nav>
+
+
+  <section>
+    <img src="./IMG/skeleton.png" alt="image de skeleton"/>
+    <h2>Qu'est-ce que Skeleton ?</h2>
+
+    <p>Skeleton est une librairie CSS permettant la mise en place d'un design responsive pour une application web. Par rapport à d'autre framework comme Bootstrap ou Foundation, Skeleton possède l'avantage d'être léger. Le secret de cette légèreté réside dans le fait que Skeleton à été créer uniquement en CSS et donc sans aucun Javascript, le tous contenu en 400 lignes. Pourtant ce qui se présente comme un avantage est aussi un défaut. Skeleton est donc destiné à être utilisé dans de petits projets web et deviendra rapidement limté dans des gros projets.</p>
+
+    <div class="container">
+      <div class="row">
+        <div class="six columns">
+          <h3>Avantage:</h3>
+          <ul>
+            <li>Léger</li>
+            <li>Simple d'utilisation</li>
+            <li>Très bon responsive</li>
+            <li>Coder uniquement en CSS</li>
+            <li>Grande compatibilité</li>
+          </ul>
+        </div>
+        <div class="six columns">
+          <h3>Inconvénient</h3>
+          <ul>
+            <li>Long à  développer pour avoir une personalisation plus complète</li>
+            <li>Uniquement pour de petits projets</li>
+            <li>Un manque de CSS intégré</li>
+            <li>Peu de template</li>
+            <li>Ne convient pas au prototyping</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <a href="">Plan du site</a>
+  <span>IUT du Havre LPRO DASI</span>
+</footer>
+</body>
+</html>
