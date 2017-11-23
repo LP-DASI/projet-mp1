@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="fr">
 <head>
 	<title>Accueil</title>
@@ -7,7 +7,7 @@
 </head>
 <body>
 	<header>
-		<h1 id="titre"><a href="#" title="Accueil">Les Frameworks CSS</a></h1>
+		<h1 id="titre"><a href="index.html" title="Accueil">Les Frameworks CSS</a></h1>
 	</header>
 
 	<!-- Ici on gère la barre de menu -->
@@ -46,21 +46,45 @@
 
 	<!-- Ici on gère le contenu -->
 	<section>
-		<h2>Bienvenue</h2>
-		<img id="introLogo" alt="Frameworks" src="IMG/frameworks.png"/>
-		<div id="introParagraph">
-			<p>
-				Bienvenue sur notre site.<br/><br/>
-				Ici nous vous présenterons le résultat de notre recherche documentaire concernant<br/>
-				les Frameworks CSS.<br/><br/>
-				Afin de vous présenter les frameworks CSS de la meilleure façon possible nous avons<br/>	
-				choisi d'utiliser la méthode de questionnement <a href="https://fr.wikipedia.org/wiki/QQOQCCP">QQOQCCP</a>.<br/><br/>
-				Nous vous conseillons de lire les informations dans l'ordre de la barre de navigation<br/>
-				afin de mieux comprendre l'interet des Frameworks CSS.<br/><br/>
-				Nous vous souahitons une bonne lecture sur notre site.<br/><br/><br/>
-				<i>Les développeurs</i>
+		<h2>Plan du site</h2>
+		<div id="plan">
+			<div class="plan">
+				<h3>Présentation</h3>
+				<ul>
+					<li><a href="explication.html">Qu'est ce que c'est?</a></li>
+					<li><a href="utilisation.html">Pourquoi faire?</a></li>
+					<li><a href="concernes.html">Qui ça interesse?</a></li>
+				</ul>
 				
-			</p>
+				<h3>Installer et utiliser</h3>
+				<ul>
+					<li><a href="frameworkInstall.html">Installer et utiliser</a></li>
+				</ul>
+			</div>
+			<div class="plan">
+				<h3>Différents Frameworks</h3>
+				<ul>
+					<li>Lourds
+						<ul >
+							<li ><a href="bootstrap.html" class="noborder">Bootstrap</a></li>
+							<li><a href="foundation.html" class="noborder">Foundation</a></li>
+							<li><a href="bsVsFound.html" class="noborder">Versus</a></li>
+						</ul>
+					</li>
+					<li>Legers
+						<ul>
+							<li><a href="purecss.html">Pure CSS</a></li>
+							<li><a href="skeleton.html">Skeleton</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="plan">
+				<h3>Bibliographie</h3>
+				<ul>
+					<li><a href="biblio.html">Bibliographie</a></li>
+				</ul>
+			</div>
 		</div>
 	</section>
 	<!-- Fin du contenu -->
